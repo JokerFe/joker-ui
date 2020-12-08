@@ -1,0 +1,23 @@
+# /node_modules/* and /bower_components/* in the project root are ignored by default
+
+# Ignore build configs
+build/*
+
+# Ignore dist files
+dist/*
+
+# Ignore mock files
+mock/*
+
+# Ignore static
+packages/static/*
+
+# Ignore src/assets/common2.0
+packages/assets/common2.0
+
+packages/components/**/src/test/*
+
+packages/components/**/dist/*
+
+packages/components/LabReport/src/_trophyIcon.vue
+
