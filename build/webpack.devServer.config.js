@@ -16,7 +16,7 @@ module.exports = function(env, argv) {
             })
         ],
         devServer: {
-            contentBase: [path.resolve(__dirname, '../dist'), path.resolve(__dirname, '../site')],
+            contentBase: [path.resolve(__dirname, '../dist'), path.resolve(__dirname, '../src')],
             hot: true,
             publicPath: '/',
             disableHostCheck: true,

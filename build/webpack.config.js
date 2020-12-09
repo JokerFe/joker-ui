@@ -16,7 +16,7 @@ const getHtmlOptions = (isProduction, opts = {}) => {
         {},
         htmlOptions,
         {
-            template: `${opts.folder}/index.html`,
+            template: `${opts.html}/index.html`,
             filename: 'index.html',
             title: config.title,
             inject: true,
@@ -29,6 +29,7 @@ const getHtmlOptions = (isProduction, opts = {}) => {
 module.exports = function(env, argv) {
     const isProduction = argv.mode === 'production';
     const buildFolder = argv.folder || 'packages';
+    const htmlFolder = path.resolve(__dirname, '../public');
     return {
         mode: isProduction ? 'production' : 'development',
         context: path.resolve(__dirname, '../'),
@@ -160,7 +161,7 @@ module.exports = function(env, argv) {
                 $isSite: JSON.stringify(isProduction),
             }),
             argv.analyze && new BundleAnalyzerPlugin(),
-            !argv.excludeHtml && new htmlWebpackPlugin(getHtmlOptions(isProduction, {folder: buildFolder}))
+            !argv.excludeHtml && new htmlWebpackPlugin(getHtmlOptions(isProduction, {folder: buildFolder, html: htmlFolder}))
         ].filter(Boolean),
         stats: {
             children: false

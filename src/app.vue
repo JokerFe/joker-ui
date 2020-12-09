@@ -1,27 +1,17 @@
 <template>
-    <div class="full">
-        <div class="title">
-            Joker UI
-        </div>
+    <div id="app">
+        <j-nav />
         <router-view />
     </div>
 </template>
 
 <script>
+import JNav from './components/nav';
 export default {
-    name: 'App'
+    name: 'App',
+    components: {
+        JNav,
+    }
 };
 </script>
-<style lang="scss" scoped>
-.full {
-    background-color: black;
-    width: 100vw;
-    height: 100vh;
-    padding: 24px;
-    .title {
-        color: yellowgreen;
-        font-size: 18px;
-    }
-}
-</style>
 
