@@ -33,6 +33,16 @@ const routes = [
             // }
         ]
     },
+    {
+        path: '/blog',
+        component: resolve => require(['../views/blogs/index.vue'], resolve),
+        children: [
+            {
+                path: '/blog/:id',
+                component: resolve => require(['../views/blogs/blogs'], resolve)
+            }
+        ]
+    }
 ];
 const router = new Router({
     // mode: 'history',

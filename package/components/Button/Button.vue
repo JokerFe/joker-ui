@@ -143,6 +143,5 @@ export default {
             this.currentLabel = label;
         }
     },
-
 }
 </script>

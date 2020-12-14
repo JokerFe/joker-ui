@@ -21,7 +21,7 @@ module.exports = function(env, argv) {
             publicPath: '/',
             disableHostCheck: true,
             open: true,
-            openPage: 'home',
+            // openPage: 'home',
             overlay: true,
             port: config.dev.port,
             historyApiFallback:{
