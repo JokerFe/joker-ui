@@ -9,15 +9,30 @@ Vue.use(Router);
 
 const routes = [
     {
-        path: '/',
+        path: '/guid',
         name: 'index',
-        conponents: Home
-    }
-    // {
-    //     path: '/home',
-    //     name: 'home',
-    //     conponents: Home
-    // }
+        component: resolve => require(['../views/guid/guid'], resolve)
+    },
+    {
+        path: '/home',
+        name: 'home',
+        component: Home
+    },
+    {
+        path: '/components',
+        component: resolve => require(['../views/components/index'], resolve),
+        // redirect: '/components/guid/intro',
+        children: [
+            {
+                path: '/components/:id',
+                component: resolve => require(['../views/components/components'], resolve)
+            },
+            // {
+            //     path: '/components/guid/:id',
+            //     component: resolve => require(['../views/components/guid'], resolve)
+            // }
+        ]
+    },
 ];
 const router = new Router({
     // mode: 'history',

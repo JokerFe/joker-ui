@@ -1,0 +1,400 @@
+.j-nav {
+	background: #fff;
+	box-shadow: 0 2px 8px #f0f1f2;
+	position: relative;
+	z-index: 99999;
+    max-width: 100%;
+    height: 64px;
+
+    &-logo {
+        width: 240px;
+        height: 100%;
+        box-sizing: border-box;
+        padding: 17px 40px;
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+
+        &-img {
+            display: inline-block;
+            width: 40px;
+            height: 30px;
+            background: url('../imgs/nav/joker.png') 0 0 no-repeat;
+            background-size: 40px;
+        }
+
+        &-title {
+            color: #314659;
+            font-size: 16px;
+            line-height: 30px;
+            margin-left: 16px;
+            font-weight: bold;
+        }
+    }
+}
+.home-wrapper {
+    width: 100vw;
+    height: 200px;
+    background: yellow;
+}
+.side-bar {
+    position: fixed;
+    top: 64px;
+    bottom: 0;
+    left: 0;
+    font-size: 14px;
+    width:316px;
+    z-index: 9999;
+    padding:36px 42px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    background: #f7f7f7;
+    color:rgba(0,0,0,0.80);
+}
+.full{
+    height: 100%;
+}
+
+
+
+.container {
+    margin: 0 80px 0 320px;
+    background: #fff;
+    border-radius: 4px;
+    min-height: 90%;
+    padding: 73px 60px;
+    min-width: 760px;
+}
+
+.origin-container {
+    margin-right: 200px;
+    position: relative;
+    padding-bottom: 100px;
+    min-height: calc(100vh - 240px);
+    .cpts-menus {
+        position: absolute;
+        bottom: 0px;
+        height: 80px;
+        line-height: 80px;
+        color: #333;
+        border-top: 1px solid #F1F1F1;
+        left: 0;
+        right: 0;
+        padding: 0 77px;
+        a {
+            span {
+                display: inline-block;
+                vertical-align: middle;
+                font-size: 14px;
+            }
+            color:#333;
+            &:hover {
+                color: #fd4545;
+                .jad-icon {
+                    color: #fd4545;
+                }
+            }
+        }
+        .jad-icon {
+            margin: 0 5px;
+            color: rgba(0, 0, 0, 0.40);
+            vertical-align: middle;
+        }
+    }
+}
+
+@media (max-width: 1240px) {
+    .menu-time {
+        display: none !important;
+    }
+}
+
+.guid-box {
+    table {
+        border-collapse: collapse;
+        border-spacing: 0px;
+        empty-cells: show;
+        border: 1px solid #e9e9e9;
+        width: 100%;
+        margin: 10px 0 24px;
+        color: #333;
+        th {
+            background: #f7f7f7;
+            color: #333;
+            border: 1px solid #e9e9e9;
+            padding: 8px 16px;
+            text-align: left;
+            font-weight: normal;
+        }
+        td {
+            border: 1px solid #e9e9e9;
+            padding: 8px 16px;
+            text-align: left;
+        }
+    }
+    .hljs {
+        margin: 5px 0
+    }
+}
+
+.bd-content {
+    font-size: 14px;
+    overflow-x: auto;
+    color: #333;
+    .jad-select {
+        vertical-align: middle;
+    }
+    .colTop {
+        p {
+            line-height: 1.8;
+        }
+    }
+    // .imgFont {
+    //     background: url(./imgs/font.png) no-repeat;
+    //     height: 270px
+    // }
+    .apiBox table {
+        border-collapse: collapse;
+        border-spacing: 0px;
+        empty-cells: show;
+        border: 1px solid #e9e9e9;
+        width: 100%;
+        margin: 10px 0 24px;
+        color: #333;
+        th {
+            background: #f7f7f7;
+            color: #333;
+            border: 1px solid #e9e9e9;
+            padding: 8px 16px;
+            text-align: left;
+            font-weight: normal;
+        }
+        td {
+            border: 1px solid #e9e9e9;
+            padding: 8px 16px;
+            text-align: left;
+        }
+    }
+    h1,
+    h2 {
+        padding-bottom: 15px;
+    }
+    h1 {
+        font-size: 32px;
+        color: rgba(0, 0, 0, 0.80);
+        font-weight: 700;
+    }
+    h2 {
+        padding-top: 35px;
+        font-size: 24px;
+        color: rgba(0, 0, 0, 0.80);
+    }
+    h3 {
+        font-size: 14px;
+        font-weight: 700;
+        padding-bottom: 10px;
+    }
+    /*li,*/
+    p {
+        color: #333
+    }
+    code {
+        font-style: italic;
+        margin: 0 3px;
+        background: #f7f7f7;
+        padding: 1px 6px;
+        border-radius: 3px;
+        color: #777;
+        font-size: .8rem;
+        border: 1px solid #e9e9e9;
+        font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    }
+    .demo-tit {
+        font-size: 13px;
+        font-weight: 700;
+        padding: 15px 0;
+    }
+    .hide {
+        display: none
+    }
+}
+
+.icon-list {
+    overflow: hidden;
+    zoom: 1;
+    clear: both;
+    padding-top: 1px;
+    li {
+        float: left;
+        width: 145px;
+        text-align: center;
+        height: 100px;
+        transition: all .2s ease;
+        position: relative;
+        padding: 0 0 5px;
+        border: 1px solid #eee;
+        margin: -1px -1px 0 0;
+        i {
+            font-size: 32px;
+            cursor: pointer;
+        }
+    }
+}
+
+.pre-code-box {
+    border: 1px solid #f1f1f1;
+    margin: 15px 0;
+    position: relative;
+    padding-bottom: 50px;
+    .bd-example {
+        padding: 45px 40px;
+    }
+    .btn-box {
+        padding-bottom: 15px;
+        position: relative;
+        .pre-show {
+            float: right;
+            cursor: pointer;
+            &:hover {
+                color: #ff3939
+            }
+        }
+        .pre-run {
+            position: absolute;
+            right: 10px;
+            bottom: -30px;
+            cursor: pointer;
+        }
+    }
+    .btn-tit {
+        font-weight: 500;
+        margin: 30px 0 10px;
+        position: relative;
+        &:before {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 1px;
+            background: #eee;
+            position: absolute;
+            top: 10px;
+            left: 0;
+        }
+        span {
+            display: inline-block;
+            background: #fff;
+            padding: 0 5px 0 18px;
+            position: relative;
+            margin-left: 30px;
+            font-size: 14px;
+        }
+    }
+    .btn-des {
+        font-size: 14px;
+        color: #999;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 48px;
+        border-top: 1px solid #eee;
+        text-align: center;
+        line-height: 48px;
+        .pre-show {
+            cursor: pointer;
+            &:hover {
+                color: #E1251B
+            }
+        }
+        .pre-run {
+            position: absolute;
+            right: 15px;
+            bottom: 0;
+            cursor: pointer;
+            &:hover {
+                color: #E1251B
+            }
+        }
+    }
+    .bd-example {
+        position: relative;
+        margin-bottom: 20px;
+        // z-index: 4;
+        z-index: auto; //当设置为4时会导致子元素Modal的遮罩层展示出错
+    }
+    pre {
+        border-top: 1px dashed #e9e9e9;
+        padding: 15px 40px 10px
+    }
+}
+
+.big-box {
+    line-height: 1.5;
+    h3 {
+        font-weight: 700;
+        padding: 10px 0;
+    }
+    ul,
+    ol {
+        margin-left: 25px
+    }
+    li {
+        line-height: 30px;
+        list-style: square
+    }
+}
+
+// .menu-time {
+//     position: fixed;
+//     top: 200px;
+//     right: 10px;
+//     width: 160px;
+//     font-size: 12px;
+//     .jad-timeline .jad-timeline-item-line {
+//         left: 2px;
+//     }
+//     .jad-timeline .jad-timeline-item-line-default {
+//         border-color: #ddd
+//     }
+//     .jad-timeline .jad-timeline-item-head {
+//         width: 5px;
+//         height: 5px;
+//     }
+//     .jad-timeline .jad-timeline-item {
+//         padding-bottom: 5px;
+//     }
+//     .jad-timeline .jad-timeline-item-content {
+//         padding-left: 15px;
+//         padding-bottom: 2px;
+//         top: -6px;
+//         a {
+//             color: #666;
+//             &:hover {
+//                 color: #fd4545
+//             }
+//         }
+//     }
+//     .jad-timeline .jad-timeline-item-head-default {
+//         background-color: #ccc;
+//         border-color: #ccc;
+//         color: #ccc;
+//     }
+// }
+
+.code-demo>div>p,
+.code-demo>div>ul>li,
+.code-demo>div>ol>li,
+.apiBox>p {
+    line-height: 2;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.80);
+}
+.loading-box{
+    background-color: rgba(0,0,0,.4);
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}

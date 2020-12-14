@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server --mode development --open --isDev --folder src --inline ---config build/webpack.devServer.config.js --hide-modules",
-    "build": "webpack --mode production --folder src ---config build/webpack.config.js --hide-modules"
+    "build": "webpack --mode production --folder src ---config build/webpack.config.js --hide-modules",
+    "build:components": "cross-env NODE_ENV=production webpack --progress --hide-modules --config build/webpack.prodCompontent.js"
   },
   "husky": {
     "hooks": {
@@ -49,6 +50,7 @@
     "clean-webpack-plugin": "^0.1.19",
     "commitizen": "^2.10.1",
     "copy-webpack-plugin": "^4.5.2",
+    "cross-env": "^7.0.3",
     "css-loader": "^0.28.11",
     "cssnano": "^4.1.7",
     "cssnano-preset-default": "^4.0.5",
@@ -61,6 +63,8 @@
     "friendly-errors-webpack-plugin": "^1.7.0",
     "html-webpack-plugin": "^3.2.0",
     "husky": "^1.0.0-rc.13",
+    "json-loader": "^0.5.7",
+    "meta-marked": "^0.5.0",
     "mini-css-extract-plugin": "^0.6.0",
     "node-sass": "^4.9.2",
     "nodemon": "^1.17.5",

@@ -1,7 +1,7 @@
 <template>
     <div id="app">
         <j-nav />
-        <router-view />
+        <router-view></router-view>
     </div>
 </template>
 

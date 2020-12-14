@@ -1,0 +1,453 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`button has the expected html structure 1`] = `
+<div
+  id="app"
+>
+  <div
+    class="row"
+  >
+    <div>
+      <button
+        class="jad-btn jad-btn-default jad-btn-large"
+        type="button"
+      >
+        <!---->
+         
+        <!---->
+         
+      </button>
+    </div>
+    <div>
+      <button
+        class="jad-btn jad-btn-default jad-btn-medium"
+        type="button"
+      >
+        <!---->
+         
+        <!---->
+         
+      </button>
+    </div>
+    <div>
+      <button
+        class="jad-btn jad-btn-default jad-btn-small"
+        type="button"
+      >
+        <!---->
+         
+        <!---->
+         
+      </button>
+    </div>
+     
+    <div>
+      <button
+        class="jad-btn jad-btn-primary"
+        type="button"
+      >
+        <!---->
+         
+        <!---->
+         
+      </button>
+    </div>
+    <div>
+      <button
+        class="jad-btn jad-btn-success"
+        type="button"
+      >
+        <!---->
+         
+        <!---->
+         
+      </button>
+    </div>
+    <div>
+      <button
+        class="jad-btn jad-btn-warning"
+        type="button"
+      >
+        <!---->
+         
+        <!---->
+         
+      </button>
+    </div>
+    <div>
+      <button
+        class="jad-btn jad-btn-error"
+        type="button"
+      >
+        <!---->
+         
+        <!---->
+         
+      </button>
+    </div>
+    <div>
+      <button
+        class="jad-btn jad-btn-info"
+        type="button"
+      >
+        <!---->
+         
+        <!---->
+         
+      </button>
+    </div>
+    <div>
+      <button
+        class="jad-btn jad-btn-text"
+        type="button"
+      >
+        <!---->
+         
+        <!---->
+         
+      </button>
+    </div>
+    <div>
+      <button
+        class="jad-btn jad-btn-linear"
+        type="button"
+      >
+        <!---->
+         
+        <!---->
+         
+      </button>
+    </div>
+    <div>
+      <button
+        class="jad-btn jad-btn-linear-red"
+        type="button"
+      >
+        <!---->
+         
+        <!---->
+         
+      </button>
+    </div>
+    <div>
+      <button
+        class="jad-btn jad-btn-dash"
+        type="button"
+      >
+        <!---->
+         
+        <!---->
+         
+      </button>
+    </div>
+     
+    <div>
+      <button
+        class="jad-btn jad-btn-outline-primary"
+        type="button"
+      >
+        <!---->
+         
+        <!---->
+         
+      </button>
+    </div>
+    <div>
+      <button
+        class="jad-btn jad-btn-outline-success"
+        type="button"
+      >
+        <!---->
+         
+        <!---->
+         
+      </button>
+    </div>
+    <div>
+      <button
+        class="jad-btn jad-btn-outline-warning"
+        type="button"
+      >
+        <!---->
+         
+        <!---->
+         
+      </button>
+    </div>
+    <div>
+      <button
+        class="jad-btn jad-btn-outline-error"
+        type="button"
+      >
+        <!---->
+         
+        <!---->
+         
+      </button>
+    </div>
+    <div>
+      <button
+        class="jad-btn jad-btn-outline-info"
+        type="button"
+      >
+        <!---->
+         
+        <!---->
+         
+      </button>
+    </div>
+    <div>
+      <button
+        class="jad-btn jad-btn-outline-text"
+        type="button"
+      >
+        <!---->
+         
+        <!---->
+         
+      </button>
+    </div>
+    <div>
+      <button
+        class="jad-btn jad-btn-outline-linear"
+        type="button"
+      >
+        <!---->
+         
+        <!---->
+         
+      </button>
+    </div>
+    <div>
+      <button
+        class="jad-btn jad-btn-outline-linear-red"
+        type="button"
+      >
+        <!---->
+         
+        <!---->
+         
+      </button>
+    </div>
+    <div>
+      <button
+        class="jad-btn jad-btn-outline-dash"
+        type="button"
+      >
+        <!---->
+         
+        <!---->
+         
+      </button>
+    </div>
+     
+    <div>
+      <button
+        class="jad-btn jad-btn-linear-primary"
+        type="button"
+      >
+        <!---->
+         
+        <!---->
+         
+      </button>
+    </div>
+    <div>
+      <button
+        class="jad-btn jad-btn-linear-success"
+        type="button"
+      >
+        <!---->
+         
+        <!---->
+         
+      </button>
+    </div>
+    <div>
+      <button
+        class="jad-btn jad-btn-linear-warning"
+        type="button"
+      >
+        <!---->
+         
+        <!---->
+         
+      </button>
+    </div>
+    <div>
+      <button
+        class="jad-btn jad-btn-linear-error"
+        type="button"
+      >
+        <!---->
+         
+        <!---->
+         
+      </button>
+    </div>
+    <div>
+      <button
+        class="jad-btn jad-btn-linear-info"
+        type="button"
+      >
+        <!---->
+         
+        <!---->
+         
+      </button>
+    </div>
+    <div>
+      <button
+        class="jad-btn jad-btn-linear-text"
+        type="button"
+      >
+        <!---->
+         
+        <!---->
+         
+      </button>
+    </div>
+    <!---->
+    <!---->
+    <div>
+      <button
+        class="jad-btn jad-btn-linear-dash"
+        type="button"
+      >
+        <!---->
+         
+        <!---->
+         
+      </button>
+    </div>
+     
+    <div>
+      <button
+        class="jad-btn jad-btn-default jad-btn-circle"
+        type="button"
+      >
+        <!---->
+         
+        <!---->
+         
+      </button>
+    </div>
+    <div>
+      <button
+        class="jad-btn jad-btn-default jad-btn-rectangle"
+        type="button"
+      >
+        <!---->
+         
+        <!---->
+         
+      </button>
+    </div>
+     
+    <div>
+      <button
+        class="jad-btn jad-btn-default jad-btn-large"
+        type="button"
+        value=""
+      >
+        <!---->
+         
+        <!---->
+         
+      </button>
+    </div>
+     
+    <div>
+      <button
+        class="jad-btn"
+        type="button"
+      >
+        <!---->
+         
+        <!---->
+         
+      </button>
+       
+      <button
+        class="jad-btn jad-btn-default"
+        type=""
+      >
+        <!---->
+         
+        <!---->
+         
+      </button>
+    </div>
+     
+    <div>
+      <button
+        class="jad-btn jad-btn-default jad-btn-small jad-btn-loading"
+        type="button"
+      >
+        <span
+          class="jad-btn-loader"
+        />
+         
+        <!---->
+         
+      </button>
+    </div>
+     
+    <div>
+      <button
+        class="jad-btn jad-btn-default jad-btn-small jad-btn-loading"
+        type="button"
+      >
+        <span
+          class="jad-btn-loader"
+        />
+         
+        <i
+          class="jad-icon jad-icon-cancel6"
+          style="font-size: 12px;"
+        />
+         
+      </button>
+    </div>
+     
+    <div>
+      <button
+        class="jad-btn jad-btn-default jad-btn-loading"
+        type="button"
+      >
+        <span
+          class="jad-btn-loader"
+        />
+         
+        <!---->
+         加载样式
+      </button>
+    </div>
+     
+    <div>
+      <button
+        class="jad-btn jad-btn-default"
+        type="button"
+      >
+        <!---->
+         
+        <!---->
+         点击回调
+      </button>
+    </div>
+     
+    <div>
+      <button
+        class="jad-btn jad-btn-default"
+        disabled="disabled"
+        type="button"
+      >
+        <!---->
+         
+        <!---->
+         不可点击
+      </button>
+    </div>
+  </div>
+</div>
+`;

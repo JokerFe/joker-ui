@@ -131,3 +131,4 @@ rules:
           allowFirstLine: false
   no-debugger:
     - 0
+  no-unused-vars: off
