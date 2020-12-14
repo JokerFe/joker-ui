@@ -1,3 +1,4 @@
+/* eslint-disable require-jsdoc */
 //导出组件中README中的meta
 export function importAll(r) {
     const obj = {}

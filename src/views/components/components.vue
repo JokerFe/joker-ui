@@ -2,31 +2,34 @@
     <div class="container origin-container">
         <div
             class="bd-content"
-            v-if="readMe">
+            v-if="readMe"
+        >
             <div
                 class="colTop"
-                v-html="intro[0]">
-            </div>
+                v-html="intro[0]"
+            />
             <div class="code-demo">
                 <div
                     v-for="(item,index) in readMe"
                     :key="index"
-                    v-editor="index">
+                    v-editor="index"
+                >
                     <div
                         v-if="index!=0 && index!=100"
-                        v-html="item.html">
-                    </div>
+                        v-html="item.html"
+                    />
                 </div>
             </div>
             <div
                 class="apiBox"
                 v-html="intro[1]"
-                v-editor>
-            </div>
+                v-editor
+            />
         </div>
         <div
             class="menu-time"
-            v-if="readMe">
+            v-if="readMe"
+        >
             <!-- <j-timeline>
                 <j-timeline-item
                     v-for="(item,index) in readMe"
@@ -37,22 +40,25 @@
         </div>
         <div
             class="cpts-menus clearfix"
-            v-if="readMe">
+            v-if="readMe"
+        >
             <router-link
                 style="float:left"
                 :to="{path:'/components/'+linkRoute[0]}"
-                v-if="linkRoute[0]">
+                v-if="linkRoute[0]"
+            >
                 <!-- <j-icon
                     type="arrow-left"
                     font-size="20">
                 </j-icon> -->
-                <span>{{mdAllMeta[linkRoute[0]].title}} {{mdAllMeta[linkRoute[0]].subtitle}}</span>
+                <span>{{ mdAllMeta[linkRoute[0]].title }} {{ mdAllMeta[linkRoute[0]].subtitle }}</span>
             </router-link>
             <router-link
                 style="float:right"
                 :to="{path:'/components/'+linkRoute[1]}"
-                v-if="linkRoute[1]">
-                <span>{{mdAllMeta[linkRoute[1]].title}} {{mdAllMeta[linkRoute[1]].subtitle}}</span>
+                v-if="linkRoute[1]"
+            >
+                <span>{{ mdAllMeta[linkRoute[1]].title }} {{ mdAllMeta[linkRoute[1]].subtitle }}</span>
                 <!-- <j-icon
                     type="arrow-right"
                     font-size="20">
@@ -60,11 +66,10 @@
             </router-link>
         </div>
     </div>
-
 </template>
 <script>
 import {mdAllMeta, mdFileUrl} from '../../content';
-import {renderMdList} from '../../utils/mdUtil'
+import {renderReadMeMdList} from '../../utils/mdUtil'
 import {importAll, importMdUrl} from '../../utils/mdUtil.js'
 export default {
     name: 'Components',
@@ -137,7 +142,7 @@ export default {
             通过name获取相应的文件夹下的md*/
             const mdUrl = mdFileUrl[name]
             //把多个md解析成自定义的html,返回值是一个对象，key值是数字
-            let demo = renderMdList(mdUrl);
+            let demo = renderReadMeMdList(mdUrl);
             me.readMe = demo;
             this.loading && this.loading.close() && (this.loading = null);
         },

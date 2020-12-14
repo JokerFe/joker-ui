@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "fix": "eslint --fix --ext .vue,.js ./src",
     "dev": "webpack-dev-server --mode development --open --isDev --folder src --inline ---config build/webpack.devServer.config.js --hide-modules",
     "build": "webpack --mode production --folder src ---config build/webpack.config.js --hide-modules",
     "build:components": "cross-env NODE_ENV=production webpack --progress --hide-modules --config build/webpack.prodCompontent.js"

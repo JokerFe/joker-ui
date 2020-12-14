@@ -1,8 +1,8 @@
 <template>
     <div class="full">
-        <side-bar></side-bar>
+        <side-bar />
         <div class="cpts-body">
-            <router-view v-if="isRouterAlive"></router-view>
+            <router-view v-if="isRouterAlive" />
             <!-- <j-footer /> -->
         </div>
     </div>
@@ -11,7 +11,7 @@
 import SideBar from '../../components/sideBar'
 // import jFooter from '../../components/footer'
 export default {
-    name: 'components',
+    name: 'Components',
     data() {
         return {
             readMe: '',

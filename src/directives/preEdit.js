@@ -27,7 +27,6 @@ const createHtml = function (pre, vnode, binding) {
     let vm = null
 
     const destroyVM = (n) => {
-        // console.log('Destroy VM')
         if (vm) {
             vm.$destroy()
             removeNode(vm.$el)
@@ -40,6 +39,7 @@ const createHtml = function (pre, vnode, binding) {
                 let node = document.querySelectorAll(`.vue-example-${n}`);
                 Array.prototype.slice.apply(node).forEach(removeNode)
             } catch (e) {
+                // eslint-disable-next-line no-console
                 console.warn('非法的选择器:', e);
             }
         }
@@ -84,6 +84,7 @@ const createHtml = function (pre, vnode, binding) {
                 el: holder
             }))
         } catch (e) {
+            // eslint-disable-next-line no-console
             console.error('[v-editor]', e)
         }
     }
@@ -124,7 +125,6 @@ Vue.directive('editor', (el, binding, vnode, oldVnode) => {
         // if (!l.template && !l.name) {
         //     return
         // }
-        // console.log(l, 'l')
 
 
         // Add live class
@@ -145,6 +145,7 @@ Vue.directive('editor', (el, binding, vnode, oldVnode) => {
                     let node = document.querySelectorAll(`.vue-example-${n}`);
                     Array.prototype.slice.apply(node).forEach(removeNode)
                 } catch (e) {
+                    // eslint-disable-next-line no-console
                     console.warn('非法的选择器:', e);
                 }
             }
@@ -193,6 +194,7 @@ Vue.directive('editor', (el, binding, vnode, oldVnode) => {
                     el: holder
                 }))
             } catch (e) {
+                // eslint-disable-next-line no-console
                 console.error('[v-editor]', e)
             }
         }

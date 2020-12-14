@@ -34,14 +34,12 @@ const routes = [
         ]
     },
     {
-        path: '/blog',
-        component: resolve => require(['../views/blogs/index.vue'], resolve),
-        children: [
-            {
-                path: '/blog/:id',
-                component: resolve => require(['../views/blogs/blogs'], resolve)
-            }
-        ]
+        path: '/blogs',
+        component: resolve => require(['../views/blogs/index'], resolve)
+    },
+    {
+        path: '/blog/:id/:name',
+        component: resolve => require(['../views/blogs/blog'], resolve)
     }
 ];
 const router = new Router({

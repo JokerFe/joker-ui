@@ -1,5 +1,6 @@
 <template>
-    <div class="home-wrapper">Home
+    <div class="home-wrapper">
+        Home
         <!-- <side-bar></side-bar> -->
     </div>
 </template>

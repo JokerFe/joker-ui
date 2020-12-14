@@ -1,7 +1,7 @@
 <template>
     <div id="app">
         <j-nav v-if="!isBlog" />
-        <router-view></router-view>
+        <router-view />
     </div>
 </template>
 
@@ -22,7 +22,6 @@ export default {
             if (this.$route.path.indexOf('blog') >= 0) {
                 this.isBlog = true;
             }
-            console.log('---------------', this.$route);
         }
     }
 };

@@ -7,3 +7,6 @@ export const mdFileUrl = importMdUrl(mdAllUrl)
 // 获取所有组件readme
 const mdAllReadme = require.context('../../package/components/', true, /README\.md$/)
 export const mdAllMeta = importAll(mdAllReadme)
+
+const mdBlog = require.context('../../blogs/doc/', true, /\.md$/)
+export const mdBlogFile = importMdUrl(mdBlog)
