@@ -9,6 +9,10 @@ Vue.use(Router);
 
 const routes = [
     {
+        path: '/',
+        redirect: '/blog/JS/闭包'
+    },
+    {
         path: '/guid',
         name: 'index',
         component: resolve => require(['../views/guid/guid'], resolve)

@@ -14,13 +14,15 @@ export default {
     },
     data() {
         return {
-            isBlog: false
+            isBlog: true
         }
     },
     watch: {
         '$route'(to, from) {
             if (this.$route.path.indexOf('blog') >= 0) {
                 this.isBlog = true;
+            } else {
+                this.isBlog = false;
             }
         }
     }

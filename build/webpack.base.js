@@ -98,11 +98,7 @@ module.exports = function(env, argv) {
                 },
                 {
                     test: /\.md$/,
-                    use: [{loader: 'json-loader'}, {loader: 'meta-marked'}]
-                },
-                {
-                    test: /\.json$/,
-                    loader: 'json-loader'
+                    use: [{loader: 'json-loader'}, {loader: 'meta-marked'}, {loader: 'text-loader'}]
                 }
             ]
         },

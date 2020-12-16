@@ -6,6 +6,7 @@
   "scripts": {
     "fix": "eslint --fix --ext .vue,.js ./src",
     "dev": "webpack-dev-server --mode development --open --isDev --folder src --inline ---config build/webpack.devServer.config.js --hide-modules",
+    "dev2": "webpack-dev-server --mode development --open --isDev --folder src --inline ---config build/webpack.dev.js --hide-modules",
     "build": "webpack --mode production --folder src ---config build/webpack.config.js --hide-modules",
     "build:components": "cross-env NODE_ENV=production webpack --progress --hide-modules --config build/webpack.prodCompontent.js"
   },
@@ -22,6 +23,7 @@
     "babel-runtime": "^6.26.0",
     "deepmerge": "^4.2.2",
     "flush-promises": "^1.0.2",
+    "github-markdown-css": "^4.0.0",
     "highlight.js": "^9.15.10",
     "highlightjs": "^9.10.0",
     "intersection-observer": "^0.7.0",
@@ -30,6 +32,7 @@
     "marked": "^0.7.0",
     "moment": "^2.24.0",
     "vue": "^2.5.17",
+    "vue-markdown": "^2.2.4",
     "vue-resource": "^1.5.1",
     "vue-router": "^3.0.1"
   },
@@ -72,6 +75,7 @@
     "optimize-css-assets-webpack-plugin": "^4.0.2",
     "prettier": "1.16.4",
     "sass-loader": "^7.0.3",
+    "text-loader": "0.0.1",
     "uglifyjs-webpack-plugin": "^1.2.7",
     "vue-jest": "^3.0.5",
     "vue-loader": "^15.2.4",

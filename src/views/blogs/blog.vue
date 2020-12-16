@@ -1,22 +1,38 @@
 <template>
-    <div class="container origin-container">
-        <div
-            class="bd-content"
-            v-if="blog"
-            v-html="blog"
-        />
+    <div class="bolg-wrapper">
+        <div class="markdown-body md">
+            <VueMarkdown
+                :source="blog"
+                v-highlight>
+            </VueMarkdown>
+        </div>
+        <div class="guid-wrapper">
+            <ul class="time-line">
+                <li
+                    class="time-line-item"
+                    v-for="(item,index) in guids"
+                    :key="'menu'+index"
+                    v-html="item">
+                </li>
+            </ul>
+        </div>
     </div>
 </template>
 <script>
-import {mdBlogFile} from '../../content'
 import {renderBlogMdList} from '../../utils/mdUtil'
+import VueMarkdown from 'vue-markdown';
 export default {
     name: 'Blog',
+    components: {
+        VueMarkdown
+    },
     data() {
         return {
             timer: null,
             name: '',
             blog: '',
+            blogHtml: '',
+            guids: [],
             currentRoute: ''
         }
     },
@@ -31,7 +47,7 @@ export default {
         }
     },
     created() {
-        this.reload()
+        this.reload();
     },
     methods: {
         reload() {
@@ -47,11 +63,26 @@ export default {
             }, 100);
         },
         renderHtmlDate(id, name) {
-            const me = this
-            // const mdUrl = mdBlogFile[id][`/${id}/${name}`];
             const mdUrl = `/${id}/${name}`;
             let demo = renderBlogMdList(mdUrl);
-            me.blog = demo;
+            this.blog = demo.markdown;
+            this.blogHtml = demo.html
+            this.guids = this.renderGuid(demo.html);
+        },
+        renderGuid(text) {
+            const STYLE_REGEX = /<(h2)[^<>]*?>(.|\s)*?<\/h2>/g;
+            let styles = text.match(STYLE_REGEX);
+            console.log(styles, text);
+            let guids = [];
+            for (let i = 0; i < styles.length; i++) {
+                const e = styles[i];
+                guids.push(
+                    e.replace(/h2/g, 'a')
+                        .replace(/id="/g, 'href="#')
+                        .replace(/<(\/)?strong>/g, '')
+                )
+            }
+            return guids
         }
     }
 }

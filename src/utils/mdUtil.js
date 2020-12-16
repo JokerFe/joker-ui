@@ -133,5 +133,5 @@ export function renderReadMeMdList(mdUrl, path) {
 //解析博客文件夹下所有md内容
 export function renderBlogMdList(mdUrl) {
     const md = require(`../../blogs/doc${mdUrl}.md`);
-    return md.html;
+    return md;
 }

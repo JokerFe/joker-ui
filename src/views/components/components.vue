@@ -69,8 +69,7 @@
 </template>
 <script>
 import {mdAllMeta, mdFileUrl} from '../../content';
-import {renderReadMeMdList} from '../../utils/mdUtil'
-import {importAll, importMdUrl} from '../../utils/mdUtil.js'
+import {importAll, importMdUrl, renderReadMeMdList} from '../../utils/mdUtil.js'
 export default {
     name: 'Components',
     data() {
@@ -159,7 +158,6 @@ export default {
         }
     },
     created() {
-        console.log(mdFileUrl);
         this.reload();
     },
 };

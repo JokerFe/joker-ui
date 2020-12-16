@@ -18,15 +18,14 @@ module.exports = function(env, argv) {
         devServer: {
             contentBase: [path.resolve(__dirname, '../dist'), path.resolve(__dirname, '../src')],
             hot: true,
+            historyApiFallback: true,
             publicPath: '/',
-            disableHostCheck: true,
             open: true,
+            noInfo: false,
             // openPage: 'home',
             overlay: true,
             port: config.dev.port,
-            historyApiFallback:{
-                index:'/index.html'
-            }
+            // disableHostCheck: true,
         },
         watchOptions: {
             ignored: /node_modules/
