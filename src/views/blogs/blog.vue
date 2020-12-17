@@ -1,5 +1,6 @@
 <template>
     <div class="bolg-wrapper">
+        <Nav />
         <div class="markdown-body md">
             <VueMarkdown
                 :source="blog"
@@ -21,10 +22,12 @@
 <script>
 import {renderBlogMdList} from '../../utils/mdUtil'
 import VueMarkdown from 'vue-markdown';
+import Nav from './nav';
 export default {
     name: 'Blog',
     components: {
-        VueMarkdown
+        VueMarkdown,
+        Nav
     },
     data() {
         return {

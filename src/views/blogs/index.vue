@@ -1,26 +1,24 @@
 <template>
     <div class="blogs-wrapper">
-        <div>
+        <Nav />
+        <!-- <div>
             <p
                 v-for="(blog, key) in mdBlogFile"
                 :key="key"
             >
                 {{key}}
-                <router-link
-                    :to="getBlogLink(item)"
-                    v-for="item in blog"
-                    :key="item"
-                >
-                    {{getBlogName(item)}}
-                </router-link>
             </p>
-        </div>
+        </div> -->
     </div>
 </template>
 <script>
 import {mdBlogFile} from '../../content';
+import Nav from './nav';
 export default {
     name: 'BlogIndex',
+    components: {
+        Nav
+    },
     data() {
         return {
             mdBlogFile: mdBlogFile,

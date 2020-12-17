@@ -10,7 +10,7 @@ Vue.use(Router);
 const routes = [
     {
         path: '/',
-        redirect: '/blog/JS/闭包'
+        redirect: '/blog'
     },
     {
         path: '/guid',
@@ -38,7 +38,7 @@ const routes = [
         ]
     },
     {
-        path: '/blogs',
+        path: '/blog',
         component: resolve => require(['../views/blogs/index'], resolve)
     },
     {

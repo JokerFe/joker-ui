@@ -90,7 +90,7 @@ module.exports = function(env, argv) {
                 },
                 {
                     test: /\.(woff|eot|svg|ttf)(\?(\w|#)+)?$/,
-                    loader: 'file-loader?limit=20480',
+                    loader: ['url-loader', 'file-loader'],
                     options: {
                         name: '[name].[ext]',
                         outputPath: 'assets/fonts'
