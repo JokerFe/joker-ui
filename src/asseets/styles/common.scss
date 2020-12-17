@@ -1,20 +1,36 @@
-.clearfix:after, .clearfix:before {
-    content: "";
+.clearfix:after,
+.clearfix:before {
+    content: '';
     display: block;
     height: 0;
     visibility: hidden;
 }
 .clearfix {
-	clear: both;
-	zoom: 1;
+    clear: both;
+    zoom: 1;
 }
-.router-link-active { color: #E1251B !important;font-weight: 700; }
-.lh1{line-height: 1.5}
-.fr { float:right }
-.bd7 { font-weight:700 }
-.gray3 { color:#333 }
-.gray6 { color:#666 }
-.gray9 { color:#999 }
+.router-link-active {
+    color: #e1251b !important;
+    font-weight: 700;
+}
+.lh1 {
+    line-height: 1.5;
+}
+.fr {
+    float: right;
+}
+.bd7 {
+    font-weight: 700;
+}
+.gray3 {
+    color: #333;
+}
+.gray6 {
+    color: #666;
+}
+.gray9 {
+    color: #999;
+}
 
 @for $i from 1 through 10 {
     .width#{50 * $i} {
@@ -51,5 +67,35 @@
     }
     .pr#{8 * $margin} {
         padding-right: #{8 * $margin}px;
+    }
+}
+
+.typing {
+    height: 16px;
+    line-height: 16px;
+    font-size: 16px;
+    border-right: 1px solid transparent;
+    animation: typing 3.5s steps(37, end), blink-caret 0.75s step-end infinite;
+    font-family: Consolas, Monaco;
+    word-break: break-all;
+    overflow: hidden;
+}
+/* 打印效果 */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 15em;
+    }
+}
+/* 光标闪啊闪 */
+@keyframes blink-caret {
+    from,
+    to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: black;
     }
 }

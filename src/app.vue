@@ -1,16 +1,16 @@
 <template>
     <div id="app">
-        <j-nav v-if="!isBlog" />
+        <Nav v-if="!isBlog" />
         <router-view />
     </div>
 </template>
 
 <script>
-import JNav from './components/nav';
+import Nav from './components/jokerNav';
 export default {
     name: 'App',
     components: {
-        JNav,
+        Nav,
     },
     data() {
         return {

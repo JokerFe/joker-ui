@@ -1,4 +1,4 @@
-.j-nav {
+.joker-nav {
 	background: #fff;
 	box-shadow: 0 2px 8px #f0f1f2;
 	position: relative;
@@ -7,10 +7,11 @@
     height: 64px;
 
     &-logo {
-        width: 240px;
+        float: left;
+        width: 316px;
         height: 100%;
         box-sizing: border-box;
-        padding: 17px 40px;
+        padding: 17px 80px;
         display: flex;
         flex-direction: row;
         align-content: center;
@@ -25,10 +26,32 @@
 
         &-title {
             color: #314659;
-            font-size: 16px;
+            font-size: 24px;
             line-height: 30px;
-            margin-left: 16px;
-            font-weight: bold;
+            margin-left: 24px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            font-family: AmaticSC-Regular,sans-serif;
+            font-feature-settings: "kern","liga","clig","calt";
+        }
+    }
+    &-menu {
+        float: right;
+        line-height: 64px;
+        margin-right: 80px;
+        &-router {
+            font-family: AmaticSC-Regular,sans-serif;
+            font-feature-settings: "kern","liga","clig","calt";
+            font-size: 24px;
+            margin-left: 24px;
+            color: #333;
+            font-weight: 600;
+            letter-spacing: 1px;
+
+            &:hover {
+                font-weight: 700;
+                text-shadow: 1px 2px 2px rgba($color: #333, $alpha: 0.5);
+            }
         }
     }
 }

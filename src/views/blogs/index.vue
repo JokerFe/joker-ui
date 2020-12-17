@@ -13,7 +13,7 @@
 </template>
 <script>
 import {mdBlogFile} from '../../content';
-import Nav from './nav';
+import Nav from '../../components/blogNav';
 export default {
     name: 'BlogIndex',
     components: {
